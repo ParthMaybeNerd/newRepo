@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Numerology App</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Numerology Calculator</h1>
+     <div class="input-group">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+    </div>
+    <div class="input-group">
+        <label for="birthdate">Enter your birthdate:</label>
+        <input type="date" id="birthdate">
+    </div>
+   
+    <input type="button" value="Display" onclick="showModal()">
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Your Numbers Are</h2>
+        <div class="result" id="result"></div>
+    </div>
+</div>
+
+</body>
+</html>
